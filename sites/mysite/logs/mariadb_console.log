@@ -1,0 +1,14 @@
+_HiStOrY_V2_
+selct\040*\040from\040`tabCustom\040Field`\040where\040`dt`\040=\040`Lead`
+selct\040*\040from\040`tabCustom\040Field`\040where\040`dt`\040=\040`Lead`;
+selct\040*\040from\040`tabCustom\040Field`\040where\040`dt`\040=\040`Lead`\040selct\040*\040from\040`tabCustom\040Field`\040where\040`dt`\040=\040`Lead`;
+select\040*\040from\040'tabCustom\040Field'\040where\040'dt'\040=\040'Lead';
+SELECT\040*\040FROM\040`tabCustom\040Field`\040WHERE\040`dt`\040=\040'Lead';
+DELETE\040FROM\040`tabCustom\040Field`\040WHERE\040`name`\040=\040'Lead-custom_reference';
+bench\040clear-cache
+SELECT\040*\040FROM\040`tabCustom\040Field`\040WHERE\040`dt`\040=\040'Lead';
+bench\040clear-cache\040SELECT\040*\040FROM\040`tabCustom\040Field`\040WHERE\040`dt`\040=\040'Lead';
+SELECT\040*\040FROM\040`tabCustom\040Field`\040WHERE\040`dt`\040=\040'Lead';
+DELETE\040FROM\040`tabCustom\040Field`\040WHERE\040`name`\040=\040'Lead-custom_get_me_any_link';
+SELECT\040*\040FROM\040`tabCustom\040Field`\040WHERE\040`dt`\040=\040'Lead';
+q

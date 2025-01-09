@@ -1,0 +1,3 @@
+2025-01-04 09:48:18,255 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'doctype': 'Currency', 'name': 'INR', 'cmd': 'frappe.desk.form.load.getdoc'}

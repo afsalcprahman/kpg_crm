@@ -1,0 +1,150 @@
+2025-01-04 00:33:15,949 DEBUG cd night-bench && python3 -m venv env
+2025-01-04 00:33:19,321 DEBUG cd night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-01-04 00:33:21,777 DEBUG cd night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet wheel
+2025-01-04 00:33:23,157 LOG Getting frappe
+2025-01-04 00:33:23,157 DEBUG cd night-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-01-04 00:33:33,184 LOG Installing frappe
+2025-01-04 00:33:33,185 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/frappe 
+2025-01-04 00:35:07,118 DEBUG cd /home/test/night-bench/apps/frappe && yarn install --check-files
+2025-01-04 00:36:10,902 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-04 00:36:11,095 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-04 00:36:11,095 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-04 00:36:11,095 DEBUG cd night-bench && bench build
+2025-01-04 00:36:11,243 INFO /usr/local/bin/bench build
+2025-01-04 00:36:53,589 LOG setting up backups
+2025-01-04 00:36:53,598 LOG backups were set up
+2025-01-04 00:36:53,598 INFO Bench night-bench initialized
+2025-01-04 00:37:25,821 INFO /usr/local/bin/bench start
+2025-01-04 00:37:26,104 INFO /usr/local/bin/bench serve --port 8000
+2025-01-04 00:37:26,112 INFO /usr/local/bin/bench schedule
+2025-01-04 00:37:26,146 INFO /usr/local/bin/bench watch
+2025-01-04 00:37:26,146 INFO /usr/local/bin/bench worker
+2025-01-04 00:45:04,062 INFO /usr/local/bin/bench new-site mysite
+2025-01-04 00:52:51,154 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2025-01-04 00:52:51,810 LOG Getting erpnext
+2025-01-04 00:52:51,810 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2025-01-04 00:52:58,338 LOG Installing erpnext
+2025-01-04 00:52:58,338 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/erpnext 
+2025-01-04 00:53:16,574 DEBUG cd /home/test/night-bench/apps/erpnext && yarn install --check-files
+2025-01-04 00:53:17,533 DEBUG bench build --app erpnext
+2025-01-04 00:53:17,679 INFO /usr/local/bin/bench build --app erpnext
+2025-01-04 00:53:20,979 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-04 00:53:21,195 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-04 00:53:21,196 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-04 00:55:47,484 INFO /usr/local/bin/bench --site mysite install-app erpnext
+2025-01-04 00:56:07,292 INFO /usr/local/bin/bench use mysite
+2025-01-04 00:56:11,203 INFO /usr/local/bin/bench --site mysite install-app erpnext
+2025-01-04 01:09:42,673 INFO /usr/local/bin/bench switch-to-branch version-15
+2025-01-04 01:09:42,680 INFO Fetching upstream unshallow for frappe
+2025-01-04 01:09:42,680 DEBUG cd ./apps/frappe && git remote set-branches upstream  '*'
+2025-01-04 01:09:42,684 DEBUG cd ./apps/frappe && git fetch --all --unshallow --quiet
+2025-01-04 01:12:55,443 DEBUG cd ./apps/frappe && git checkout -f version-15
+2025-01-04 01:12:56,010 INFO Fetching upstream unshallow for erpnext
+2025-01-04 01:12:56,010 DEBUG cd ./apps/erpnext && git remote set-branches upstream  '*'
+2025-01-04 01:12:56,014 DEBUG cd ./apps/erpnext && git fetch --all --unshallow --quiet
+2025-01-04 01:18:44,219 DEBUG cd ./apps/erpnext && git checkout -f version-15
+2025-01-04 01:18:44,668 INFO Successfully switched branches for: frappe, erpnext
+2025-01-04 01:19:10,983 INFO /usr/local/bin/bench use mysite
+2025-01-04 01:19:23,276 INFO /usr/local/bin/bench --site mysite install-app erpnext
+2025-01-04 01:33:22,883 INFO /usr/local/bin/bench clear-cache
+2025-01-04 01:33:54,983 INFO /usr/local/bin/bench clear-website-cache
+2025-01-04 01:34:09,323 INFO /usr/local/bin/bench --site mysite install-app erpnext
+2025-01-04 01:39:20,600 INFO /usr/local/bin/bench list-apps
+2025-01-04 01:39:41,772 INFO /usr/local/bin/bench version
+2025-01-04 01:43:10,063 INFO /usr/local/bin/bench start
+2025-01-04 01:43:10,346 INFO /usr/local/bin/bench serve --port 8000
+2025-01-04 01:43:10,351 INFO /usr/local/bin/bench watch
+2025-01-04 01:43:10,386 INFO /usr/local/bin/bench schedule
+2025-01-04 01:43:10,387 INFO /usr/local/bin/bench worker
+2025-01-04 09:37:02,135 INFO /usr/local/bin/bench list-app
+2025-01-04 09:37:07,044 INFO /usr/local/bin/bench list-apps
+2025-01-04 09:41:23,417 INFO /usr/local/bin/bench get-app --branch install-app erpnext
+2025-01-04 09:42:19,665 INFO /usr/local/bin/bench start
+2025-01-04 09:42:19,947 INFO /usr/local/bin/bench worker
+2025-01-04 09:42:19,949 INFO /usr/local/bin/bench schedule
+2025-01-04 09:42:19,967 INFO /usr/local/bin/bench watch
+2025-01-04 09:42:19,978 INFO /usr/local/bin/bench serve --port 8000
+2025-01-04 09:47:05,068 INFO /usr/local/bin/bench start
+2025-01-04 09:47:05,339 INFO /usr/local/bin/bench watch
+2025-01-04 09:47:05,342 INFO /usr/local/bin/bench worker
+2025-01-04 09:47:05,369 INFO /usr/local/bin/bench schedule
+2025-01-04 09:47:05,373 INFO /usr/local/bin/bench serve --port 8000
+2025-01-04 09:47:26,962 INFO /usr/local/bin/bench get-app --branch install-app erpnext version-15
+2025-01-04 09:47:28,090 WARNING /usr/local/bin/bench get-app --branch install-app erpnext version-15 executed with exit code 1
+2025-01-04 09:50:06,264 INFO /usr/local/bin/bench migrate
+2025-01-04 09:52:12,358 INFO /usr/local/bin/bench restart
+2025-01-04 09:52:12,564 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-04 09:52:12,763 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-04 09:52:12,763 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-01-04 10:21:13,354 INFO /usr/local/bin/bench --version
+2025-01-04 12:00:01,584 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-04 12:11:38,199 INFO /usr/local/bin/bench start
+2025-01-04 12:11:38,506 INFO /usr/local/bin/bench schedule
+2025-01-04 12:11:38,515 INFO /usr/local/bin/bench watch
+2025-01-04 12:11:38,542 INFO /usr/local/bin/bench serve --port 8000
+2025-01-04 12:11:38,545 INFO /usr/local/bin/bench worker
+2025-01-05 12:00:02,059 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-06 10:01:11,177 INFO /usr/local/bin/bench start
+2025-01-06 10:01:11,459 INFO /usr/local/bin/bench worker
+2025-01-06 10:01:11,464 INFO /usr/local/bin/bench serve --port 8000
+2025-01-06 10:01:11,484 INFO /usr/local/bin/bench schedule
+2025-01-06 10:01:11,489 INFO /usr/local/bin/bench watch
+2025-01-06 10:53:22,236 INFO /usr/local/bin/bench lists-apps
+2025-01-06 10:53:34,786 INFO /usr/local/bin/bench list-apps
+2025-01-06 10:55:02,258 INFO /usr/local/bin/bench new-app myapp
+2025-01-06 10:55:02,269 LOG creating new app myapp
+2025-01-06 10:57:00,629 LOG Installing myapp
+2025-01-06 10:57:00,630 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/myapp 
+2025-01-06 10:57:02,827 DEBUG bench build --app myapp
+2025-01-06 10:57:02,981 INFO /usr/local/bin/bench build --app myapp
+2025-01-06 10:57:05,485 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-06 10:57:05,673 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-06 10:57:05,674 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-06 10:58:03,372 INFO /usr/local/bin/bench use mysite
+2025-01-06 10:58:30,545 INFO /usr/local/bin/bench --site mysite install-app myapp
+2025-01-06 11:00:02,880 INFO /usr/local/bin/bench start
+2025-01-06 11:00:03,172 INFO /usr/local/bin/bench worker
+2025-01-06 11:00:03,197 INFO /usr/local/bin/bench schedule
+2025-01-06 11:00:03,204 INFO /usr/local/bin/bench watch
+2025-01-06 11:00:03,204 INFO /usr/local/bin/bench serve --port 8000
+2025-01-06 12:00:02,067 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-06 18:00:01,886 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-07 09:17:09,807 INFO /usr/local/bin/bench start
+2025-01-07 09:17:10,093 INFO /usr/local/bin/bench schedule
+2025-01-07 09:17:10,102 INFO /usr/local/bin/bench watch
+2025-01-07 09:17:10,134 INFO /usr/local/bin/bench serve --port 8000
+2025-01-07 09:17:10,139 INFO /usr/local/bin/bench worker
+2025-01-07 12:00:01,622 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-07 14:54:18,310 INFO /usr/local/bin/bench start
+2025-01-07 14:54:18,500 INFO /usr/local/bin/bench worker
+2025-01-07 14:54:18,507 INFO /usr/local/bin/bench serve --port 8000
+2025-01-07 14:54:18,520 INFO /usr/local/bin/bench schedule
+2025-01-07 14:54:18,525 INFO /usr/local/bin/bench watch
+2025-01-07 17:26:56,904 INFO /usr/local/bin/bench clear-cache
+2025-01-07 17:27:16,513 INFO /usr/local/bin/bench clear-website-cache
+2025-01-07 17:27:25,748 INFO /usr/local/bin/bench migrate
+2025-01-07 17:42:43,803 INFO /usr/local/bin/bench mysql
+2025-01-07 17:45:17,805 INFO /usr/local/bin/bench mariadb
+2025-01-07 17:53:35,316 INFO /usr/local/bin/bench clear-cache
+2025-01-07 17:53:56,798 INFO /usr/local/bin/bench clear-website-cache
+2025-01-07 17:57:05,175 INFO /usr/local/bin/bench clear-cache
+2025-01-07 17:57:08,284 INFO /usr/local/bin/bench clear-website-cache
+2025-01-07 17:57:17,570 INFO /usr/local/bin/bench migrate
+2025-01-07 18:00:01,991 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 09:37:14,329 INFO /usr/local/bin/bench start
+2025-01-08 09:37:14,613 INFO /usr/local/bin/bench serve --port 8000
+2025-01-08 09:37:14,621 INFO /usr/local/bin/bench worker
+2025-01-08 09:37:14,638 INFO /usr/local/bin/bench watch
+2025-01-08 09:37:14,650 INFO /usr/local/bin/bench schedule
+2025-01-08 12:00:01,626 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 18:00:01,585 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 21:58:22,353 INFO /usr/local/bin/bench start
+2025-01-08 21:58:22,663 INFO /usr/local/bin/bench schedule
+2025-01-08 21:58:22,671 INFO /usr/local/bin/bench watch
+2025-01-08 21:58:22,699 INFO /usr/local/bin/bench serve --port 8000
+2025-01-08 21:58:22,705 INFO /usr/local/bin/bench worker
+2025-01-09 09:10:59,574 INFO /usr/local/bin/bench start
+2025-01-09 09:10:59,866 INFO /usr/local/bin/bench worker
+2025-01-09 09:10:59,902 INFO /usr/local/bin/bench schedule
+2025-01-09 09:10:59,906 INFO /usr/local/bin/bench serve --port 8000
+2025-01-09 09:10:59,909 INFO /usr/local/bin/bench watch
