@@ -1,0 +1,21 @@
+2025-01-14 11:57:31,860 INFO ipython === bench console session ===
+2025-01-14 11:57:31,860 INFO ipython frappe.get_doc({
+"doctype":"DocType",
+"name": "CRM Lead Status",
+"module" :"CRM",
+"custom": 1,
+"fields": [{"fieldname": "status","fieldtype":"Data","label":"Status"}]
+).insert()
+2025-01-14 11:57:31,860 INFO ipython frappe.get_doc({
+    "doctype": "DocType",
+    "name": "CRM Lead Status",
+    "module": "CRM",
+    "custom": 1,
+    "fields": [{"fieldname": "status", "fieldtype": "Data", "label": "Status"}]
+}).insert()
+2025-01-14 11:57:31,860 INFO ipython frappe.get_all('DocType', filters={'name': 'CRM Lead Status'})
+2025-01-14 11:57:31,861 INFO ipython frappe.get_doc({
+    "doctype": "CRM Lead Status",
+    "status": "New"
+}).insert()
+2025-01-14 11:57:31,861 INFO ipython === session end ===

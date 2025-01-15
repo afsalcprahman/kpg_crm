@@ -46,3 +46,63 @@ Backup Summary for mysite at 2025-01-08 18:00:03.593115
 Config  : ./mysite/private/backups/20250108_180002-mysite-site_config_backup.json 127.0B
 Database: ./mysite/private/backups/20250108_180002-mysite-database.sql.gz         1.3MiB
 Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250109_120002-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-09 12:00:04.418377
+Config  : ./mysite/private/backups/20250109_120002-mysite-site_config_backup.json 127.0B
+Database: ./mysite/private/backups/20250109_120002-mysite-database.sql.gz         1.4MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250109_180002-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-09 18:00:04.949938
+Config  : ./mysite/private/backups/20250109_180002-mysite-site_config_backup.json 219.0B
+Database: ./mysite/private/backups/20250109_180002-mysite-database.sql.gz         1.4MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250110_120002-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-10 12:00:05.014987
+Config  : ./mysite/private/backups/20250110_120002-mysite-site_config_backup.json 219.0B
+Database: ./mysite/private/backups/20250110_120002-mysite-database.sql.gz         1.4MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_44a56b58f066ba97 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _44a56b58f066ba97 | /usr/bin/gzip >> ./mycrmsite/private/backups/20250110_180002-mycrmsite-database.sql.gz
+
+Backup Summary for mycrmsite at 2025-01-10 18:00:02.791849
+Config  : ./mycrmsite/private/backups/20250110_180002-mycrmsite-site_config_backup.json 94.0B
+Database: ./mycrmsite/private/backups/20250110_180002-mycrmsite-database.sql.gz         302.6KiB
+Backup for Site mycrmsite has been successfully completed
+File ./mysite/private/backups/20250109_180002-mysite-site_config_backup.json is recent
+File ./mysite/private/backups/20250110_120002-mysite-site_config_backup.json is recent
+File ./mysite/private/backups/20250109_120002-mysite-site_config_backup.json is older than 24 hours
+File ./mysite/private/backups/20250109_180002-mysite-database.sql.gz is recent
+File ./mysite/private/backups/20250109_120002-mysite-database.sql.gz is older than 24 hours
+File ./mysite/private/backups/20250110_120002-mysite-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250110_180002-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-10 18:00:04.299584
+Config  : ./mysite/private/backups/20250110_180002-mysite-site_config_backup.json 216.0B
+Database: ./mysite/private/backups/20250110_180002-mysite-database.sql.gz         1.5MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250113_120002-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-13 12:00:04.057490
+Config  : ./mysite/private/backups/20250113_120002-mysite-site_config_backup.json 216.0B
+Database: ./mysite/private/backups/20250113_120002-mysite-database.sql.gz         1.5MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250113_180001-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-13 18:00:02.738229
+Config  : ./mysite/private/backups/20250113_180001-mysite-site_config_backup.json 219.0B
+Database: ./mysite/private/backups/20250113_180001-mysite-database.sql.gz         1.6MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250114_120002-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-14 12:00:03.279327
+Config  : ./mysite/private/backups/20250114_120002-mysite-site_config_backup.json 219.0B
+Database: ./mysite/private/backups/20250114_120002-mysite-database.sql.gz         1.1MiB
+Backup for Site mysite has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_000592784d7ee2a8 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _000592784d7ee2a8 | /usr/bin/gzip >> ./mysite/private/backups/20250114_180001-mysite-database.sql.gz
+
+Backup Summary for mysite at 2025-01-14 18:00:03.359505
+Config  : ./mysite/private/backups/20250114_180001-mysite-site_config_backup.json 219.0B
+Database: ./mysite/private/backups/20250114_180001-mysite-database.sql.gz         1.2MiB
+Backup for Site mysite has been successfully completed

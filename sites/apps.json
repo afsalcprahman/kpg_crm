@@ -27,5 +27,15 @@
         "required": [],
         "idx": 3,
         "version": "0.0.1"
+    },
+    "crm": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "d1588ca1f56f3a167feb4fe1f0f21f2703c01b1a",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "2.0.0-dev"
     }
 }

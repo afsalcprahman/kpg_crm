@@ -1,3 +1,57 @@
-2025-01-04 09:48:18,255 ERROR frappe New Exception collected in error log
+2025-01-13 12:14:11,712 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'Currency', 'name': 'INR', 'cmd': 'frappe.desk.form.load.getdoc'}
+Form Dict: {'recipients': 'drfirst@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr First (#CRM-LEAD-2025-00011)', 'content': '<p>Hi this is a email message for you to remember our offer</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00011', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}
+2025-01-13 13:14:40,844 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-13 13:14:41,018 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-13 13:14:45,231 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-13 13:14:45,428 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-13 13:18:53,488 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-13 13:18:53,664 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:01:51,753 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:01:52,021 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:02:06,451 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:02:06,670 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:02:08,035 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:02:08,231 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:40:53,694 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:40:53,943 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:40:58,135 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 12:40:58,373 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {}
+2025-01-14 13:28:03,892 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'recipients': 'bablu@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr bablu balad (#CRM-LEAD-2025-00002)', 'content': '<p>This message for Mr . Bablu is to confirm your quotation</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00002', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}
+2025-01-14 13:28:35,884 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'recipients': 'bablu@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr bablu balad (#CRM-LEAD-2025-00002)', 'content': '<p>This message for Mr . Bablu is to confirm your quotation</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00002', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}

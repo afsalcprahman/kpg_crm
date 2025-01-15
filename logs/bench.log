@@ -148,3 +148,406 @@
 2025-01-09 09:10:59,902 INFO /usr/local/bin/bench schedule
 2025-01-09 09:10:59,906 INFO /usr/local/bin/bench serve --port 8000
 2025-01-09 09:10:59,909 INFO /usr/local/bin/bench watch
+2025-01-09 10:40:22,303 INFO /usr/local/bin/bench lists-apps
+2025-01-09 10:40:47,680 INFO /usr/local/bin/bench list-apps
+2025-01-09 12:00:01,970 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-09 14:48:56,040 INFO /usr/local/bin/bench start
+2025-01-09 14:48:56,222 INFO /usr/local/bin/bench worker
+2025-01-09 14:48:56,231 INFO /usr/local/bin/bench serve --port 8000
+2025-01-09 14:48:56,234 INFO /usr/local/bin/bench watch
+2025-01-09 14:48:56,252 INFO /usr/local/bin/bench schedule
+2025-01-09 15:23:19,170 INFO /usr/local/bin/bench --site mysite set-config developer_mode false
+2025-01-09 16:14:31,782 INFO /usr/local/bin/bench --site mysite set-config developer_mode true
+2025-01-09 18:00:01,717 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-10 09:18:51,186 INFO /usr/local/bin/bench find .
+2025-01-10 09:19:18,030 INFO /usr/local/bin/bench list-sites
+2025-01-10 09:19:25,677 INFO /usr/local/bin/bench lists-sites
+2025-01-10 09:19:56,586 INFO /usr/local/bin/bench lists-apps
+2025-01-10 09:20:04,747 INFO /usr/local/bin/bench list-apps
+2025-01-10 09:20:25,386 INFO /usr/local/bin/bench list-sites
+2025-01-10 09:21:34,544 INFO /usr/local/bin/bench find .
+2025-01-10 09:24:05,184 INFO /usr/local/bin/bench start
+2025-01-10 09:24:05,476 INFO /usr/local/bin/bench serve --port 8000
+2025-01-10 09:24:05,486 INFO /usr/local/bin/bench watch
+2025-01-10 09:24:05,512 INFO /usr/local/bin/bench schedule
+2025-01-10 09:24:05,518 INFO /usr/local/bin/bench worker
+2025-01-10 12:00:01,986 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-10 14:11:56,247 INFO /usr/local/bin/bench start
+2025-01-10 14:11:56,428 INFO /usr/local/bin/bench serve --port 8000
+2025-01-10 14:11:56,430 INFO /usr/local/bin/bench schedule
+2025-01-10 14:11:56,460 INFO /usr/local/bin/bench worker
+2025-01-10 14:11:56,462 INFO /usr/local/bin/bench watch
+2025-01-10 16:38:06,361 INFO /usr/local/bin/bench get-app crm
+2025-01-10 16:38:06,934 LOG Getting crm
+2025-01-10 16:38:06,935 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git  --depth 1 --origin upstream
+2025-01-10 16:38:10,340 LOG Installing crm
+2025-01-10 16:38:10,340 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-10 16:38:19,224 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-10 16:38:31,281 DEBUG bench build --app crm
+2025-01-10 16:38:31,378 INFO /usr/local/bin/bench build --app crm
+2025-01-10 16:38:54,882 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-10 16:38:55,013 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-10 16:38:55,014 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-10 16:53:20,605 INFO /usr/local/bin/bench new-site mysite --install-app crm
+2025-01-10 16:53:46,129 INFO /usr/local/bin/bench new-site mycrmsite --install-app crm
+2025-01-10 16:55:16,136 INFO /usr/local/bin/bench browse mycrmsite --user Administrator
+2025-01-10 17:02:23,916 INFO /usr/local/bin/bench use my site
+2025-01-10 17:02:32,812 INFO /usr/local/bin/bench use mysite
+2025-01-10 17:03:03,729 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-10 17:03:49,583 INFO /usr/local/bin/bench use mysite
+2025-01-10 17:04:05,159 INFO /usr/local/bin/bench get-app crm
+2025-01-10 17:04:14,154 INFO App moved from apps/crm to archived/apps/crm-2025-01-10
+2025-01-10 17:04:14,157 LOG Getting crm
+2025-01-10 17:04:14,157 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git --branch develop --depth 1 --origin upstream
+2025-01-10 17:04:20,049 LOG Installing crm
+2025-01-10 17:04:20,049 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-10 17:04:21,843 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-10 17:04:26,538 DEBUG bench build --app crm
+2025-01-10 17:04:26,628 INFO /usr/local/bin/bench build --app crm
+2025-01-10 17:04:49,951 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-10 17:04:50,060 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-10 17:04:50,060 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-10 17:05:27,552 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-10 17:05:50,353 INFO /usr/local/bin/bench start
+2025-01-10 17:05:50,538 INFO /usr/local/bin/bench worker
+2025-01-10 17:05:50,539 INFO /usr/local/bin/bench serve --port 8000
+2025-01-10 17:05:50,557 INFO /usr/local/bin/bench schedule
+2025-01-10 17:05:50,571 INFO /usr/local/bin/bench watch
+2025-01-10 17:13:16,141 INFO /usr/local/bin/bench clear-cache
+2025-01-10 17:13:29,442 INFO /usr/local/bin/bench clear-website-cache
+2025-01-10 17:13:36,767 INFO /usr/local/bin/bench migrate
+2025-01-10 17:14:10,305 INFO /usr/local/bin/bench start
+2025-01-10 17:14:10,480 INFO /usr/local/bin/bench schedule
+2025-01-10 17:14:10,505 INFO /usr/local/bin/bench worker
+2025-01-10 17:14:10,509 INFO /usr/local/bin/bench serve --port 8000
+2025-01-10 17:14:10,509 INFO /usr/local/bin/bench watch
+2025-01-10 17:37:40,747 INFO /usr/local/bin/bench start
+2025-01-10 17:37:40,921 INFO /usr/local/bin/bench watch
+2025-01-10 17:37:40,922 INFO /usr/local/bin/bench worker
+2025-01-10 17:37:40,949 INFO /usr/local/bin/bench serve --port 8000
+2025-01-10 17:37:40,949 INFO /usr/local/bin/bench schedule
+2025-01-10 17:40:05,783 INFO /usr/local/bin/bench --site mysite set-config developer_mode 1
+2025-01-10 18:00:01,767 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 09:46:36,607 INFO /usr/local/bin/bench start
+2025-01-13 09:46:36,888 INFO /usr/local/bin/bench schedule
+2025-01-13 09:46:36,896 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 09:46:36,917 INFO /usr/local/bin/bench worker
+2025-01-13 09:46:36,924 INFO /usr/local/bin/bench watch
+2025-01-13 09:48:37,083 INFO /usr/local/bin/bench clear-cache
+2025-01-13 09:50:56,574 INFO /usr/local/bin/bench use mysite
+2025-01-13 10:13:05,181 INFO /usr/local/bin/bench start
+2025-01-13 10:13:05,469 INFO /usr/local/bin/bench worker
+2025-01-13 10:13:05,479 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 10:13:05,504 INFO /usr/local/bin/bench watch
+2025-01-13 10:13:05,510 INFO /usr/local/bin/bench schedule
+2025-01-13 10:13:34,485 INFO /usr/local/bin/bench --site mysite backup
+2025-01-13 10:36:29,258 INFO /usr/local/bin/bench update --patch
+2025-01-13 10:36:31,054 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-01-13 10:36:45,025 WARNING /usr/local/bin/bench update --patch executed with exit code 1
+2025-01-13 10:38:34,372 INFO /usr/local/bin/bench start
+2025-01-13 10:38:34,662 INFO /usr/local/bin/bench schedule
+2025-01-13 10:38:34,675 INFO /usr/local/bin/bench worker
+2025-01-13 10:38:34,685 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 10:38:34,688 INFO /usr/local/bin/bench watch
+2025-01-13 10:39:44,374 INFO /usr/local/bin/bench --site mysite migrate
+2025-01-13 10:40:14,254 INFO /usr/local/bin/bench restart
+2025-01-13 10:40:14,460 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-13 10:40:14,660 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-13 10:40:14,661 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-01-13 10:40:24,075 INFO /usr/local/bin/bench start
+2025-01-13 10:40:24,359 INFO /usr/local/bin/bench worker
+2025-01-13 10:40:24,364 INFO /usr/local/bin/bench watch
+2025-01-13 10:40:24,383 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 10:40:24,390 INFO /usr/local/bin/bench schedule
+2025-01-13 10:46:04,318 INFO /usr/local/bin/bench get-app crm
+2025-01-13 10:46:07,507 INFO App moved from apps/crm to archived/apps/crm-2025-01-13
+2025-01-13 10:46:07,511 LOG Getting crm
+2025-01-13 10:46:07,511 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git --branch develop --depth 1 --origin upstream
+2025-01-13 10:46:10,906 LOG Installing crm
+2025-01-13 10:46:10,907 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-13 10:46:13,954 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-13 10:46:21,974 DEBUG bench build --app crm
+2025-01-13 10:46:22,126 INFO /usr/local/bin/bench build --app crm
+2025-01-13 10:47:00,259 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-13 10:47:00,454 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-13 10:47:00,454 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-13 10:47:28,750 INFO /usr/local/bin/bench use mysite
+2025-01-13 10:47:33,094 INFO /usr/local/bin/bench get-app crm
+2025-01-13 10:47:35,238 INFO App moved from apps/crm to archived/apps/crm-2025-01-13_1
+2025-01-13 10:47:35,244 LOG Getting crm
+2025-01-13 10:47:35,244 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git --branch develop --depth 1 --origin upstream
+2025-01-13 10:47:50,629 LOG Installing crm
+2025-01-13 10:47:50,629 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-13 10:47:53,567 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-13 10:48:01,601 DEBUG bench build --app crm
+2025-01-13 10:48:01,755 INFO /usr/local/bin/bench build --app crm
+2025-01-13 10:48:39,574 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-13 10:48:39,769 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-13 10:48:39,769 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-13 10:49:26,168 INFO /usr/local/bin/bench new-site mysite --install-app crm
+2025-01-13 10:49:44,688 INFO /usr/local/bin/bench install-app crm
+2025-01-13 10:51:41,063 INFO /usr/local/bin/bench migrate
+2025-01-13 10:52:19,794 INFO /usr/local/bin/bench start
+2025-01-13 10:52:20,081 INFO /usr/local/bin/bench watch
+2025-01-13 10:52:20,101 INFO /usr/local/bin/bench worker
+2025-01-13 10:52:20,118 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 10:52:20,122 INFO /usr/local/bin/bench schedule
+2025-01-13 10:55:27,664 INFO /usr/local/bin/bench --version
+2025-01-13 10:55:48,965 INFO /usr/local/bin/bench start
+2025-01-13 10:55:49,240 INFO /usr/local/bin/bench worker
+2025-01-13 10:55:49,242 INFO /usr/local/bin/bench schedule
+2025-01-13 10:55:49,267 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 10:55:49,279 INFO /usr/local/bin/bench watch
+2025-01-13 10:58:30,391 INFO /usr/local/bin/bench uninstall-app crm
+2025-01-13 11:00:08,379 INFO /usr/local/bin/bench --site mysite uninstall-app crm
+2025-01-13 11:00:29,814 INFO /usr/local/bin/bench remove-app crm
+2025-01-13 11:00:29,959 INFO /usr/local/bin/bench --site all list-apps --format json
+2025-01-13 11:00:30,728 INFO /usr/local/bin/bench --site mycrmsite list-apps
+2025-01-13 11:00:31,235 WARNING /usr/local/bin/bench remove-app crm executed with exit code 1
+2025-01-13 11:01:02,614 INFO /usr/local/bin/bench use mycrmsite
+2025-01-13 11:01:17,171 INFO /usr/local/bin/bench --site mycrmsite uninstall-app crm
+2025-01-13 11:01:48,831 INFO /usr/local/bin/bench remove-app crm
+2025-01-13 11:01:48,984 INFO /usr/local/bin/bench --site all list-apps --format json
+2025-01-13 11:01:49,656 INFO /usr/local/bin/bench --site mycrmsite list-apps
+2025-01-13 11:01:50,318 INFO /usr/local/bin/bench --site mysite list-apps
+2025-01-13 11:01:50,840 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip uninstall -y crm
+2025-01-13 11:01:51,928 INFO App moved from apps/crm to archived/apps/crm-2025-01-13_2
+2025-01-13 11:01:52,117 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-13 11:01:52,306 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-13 11:01:52,306 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-13 11:13:24,130 INFO /usr/local/bin/bench start
+2025-01-13 11:13:24,398 INFO /usr/local/bin/bench worker
+2025-01-13 11:13:24,421 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 11:13:24,425 INFO /usr/local/bin/bench watch
+2025-01-13 11:13:24,426 INFO /usr/local/bin/bench schedule
+2025-01-13 11:15:37,055 INFO /usr/local/bin/bench use mysite
+2025-01-13 11:17:04,424 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-13 11:17:57,690 INFO /usr/local/bin/bench --site mysite get-app crm
+2025-01-13 11:17:57,699 WARNING /usr/local/bin/bench --site mysite get-app crm executed with exit code 2
+2025-01-13 11:18:10,170 INFO /usr/local/bin/bench get-app crm
+2025-01-13 11:18:10,922 LOG Getting crm
+2025-01-13 11:18:10,922 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git  --depth 1 --origin upstream
+2025-01-13 11:18:14,944 LOG Installing crm
+2025-01-13 11:18:14,944 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-13 11:18:17,117 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-13 11:18:26,995 DEBUG bench build --app crm
+2025-01-13 11:18:27,143 INFO /usr/local/bin/bench build --app crm
+2025-01-13 11:19:05,136 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-13 11:19:05,326 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-13 11:19:05,326 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-13 11:19:52,379 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-13 11:21:00,008 INFO /usr/local/bin/bench new-site mysite --install-app crm
+2025-01-13 11:21:48,874 INFO /usr/local/bin/bench install-app crm
+2025-01-13 11:22:36,169 INFO /usr/local/bin/bench start
+2025-01-13 11:22:36,445 INFO /usr/local/bin/bench worker
+2025-01-13 11:22:36,449 INFO /usr/local/bin/bench schedule
+2025-01-13 11:22:36,466 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 11:22:36,481 INFO /usr/local/bin/bench watch
+2025-01-13 11:33:37,876 INFO /usr/local/bin/bench migrate
+2025-01-13 12:00:01,958 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 12:30:22,865 INFO /usr/local/bin/bench --site mysite migrate
+2025-01-13 12:30:42,337 INFO /usr/local/bin/bench build
+2025-01-13 12:34:46,688 INFO /usr/local/bin/bench start
+2025-01-13 12:34:46,959 INFO /usr/local/bin/bench worker
+2025-01-13 12:34:46,963 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 12:34:46,985 INFO /usr/local/bin/bench schedule
+2025-01-13 12:34:46,998 INFO /usr/local/bin/bench watch
+2025-01-13 12:50:00,673 INFO /usr/local/bin/bench update
+2025-01-13 12:50:02,778 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-01-13 12:50:14,990 WARNING /usr/local/bin/bench update executed with exit code 1
+2025-01-13 13:12:57,280 INFO /usr/local/bin/bench update
+2025-01-13 13:12:58,538 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-01-13 13:13:09,719 WARNING /usr/local/bin/bench update executed with exit code 1
+2025-01-13 13:14:29,698 INFO /usr/local/bin/bench --site mysite set-config developer_mode true
+2025-01-13 13:20:01,855 INFO /usr/local/bin/bench start
+2025-01-13 13:20:02,028 INFO /usr/local/bin/bench schedule
+2025-01-13 13:20:02,046 INFO /usr/local/bin/bench worker
+2025-01-13 13:20:02,054 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 13:20:02,054 INFO /usr/local/bin/bench watch
+2025-01-13 15:13:22,760 INFO /usr/local/bin/bench start
+2025-01-13 15:13:22,936 INFO /usr/local/bin/bench worker
+2025-01-13 15:13:22,942 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 15:13:22,962 INFO /usr/local/bin/bench watch
+2025-01-13 15:13:22,962 INFO /usr/local/bin/bench schedule
+2025-01-13 17:16:53,221 INFO /usr/local/bin/bench --site mysite set-config developer_mode true
+2025-01-13 18:00:01,494 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 20:07:23,630 INFO /usr/local/bin/bench start
+2025-01-13 20:07:23,945 INFO /usr/local/bin/bench worker
+2025-01-13 20:07:23,956 INFO /usr/local/bin/bench serve --port 8000
+2025-01-13 20:07:23,976 INFO /usr/local/bin/bench watch
+2025-01-13 20:07:23,976 INFO /usr/local/bin/bench schedule
+2025-01-14 09:38:09,536 INFO /usr/local/bin/bench --version
+2025-01-14 09:42:05,707 INFO /usr/local/bin/bench use mysite
+2025-01-14 09:42:45,388 INFO /usr/local/bin/bench --site mysite uninstall-app crm
+2025-01-14 09:43:20,135 INFO /usr/local/bin/bench start
+2025-01-14 09:43:20,393 INFO /usr/local/bin/bench worker
+2025-01-14 09:43:20,403 INFO /usr/local/bin/bench watch
+2025-01-14 09:43:20,425 INFO /usr/local/bin/bench serve --port 8000
+2025-01-14 09:43:20,435 INFO /usr/local/bin/bench schedule
+2025-01-14 09:44:32,880 INFO /usr/local/bin/bench --site mysite uninstall-app crm
+2025-01-14 09:44:57,291 INFO /usr/local/bin/bench remove-app crm
+2025-01-14 09:44:57,438 INFO /usr/local/bin/bench --site all list-apps --format json
+2025-01-14 09:44:58,102 INFO /usr/local/bin/bench --site mysite list-apps
+2025-01-14 09:44:58,618 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip uninstall -y crm
+2025-01-14 09:44:59,810 INFO App moved from apps/crm to archived/apps/crm-2025-01-14
+2025-01-14 09:44:59,998 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-14 09:45:00,188 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-14 09:45:00,188 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-14 09:45:28,875 INFO /usr/local/bin/bench update
+2025-01-14 09:45:30,502 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-01-14 09:45:42,407 WARNING /usr/local/bin/bench update executed with exit code 1
+2025-01-14 09:45:54,478 INFO /usr/local/bin/bench migrate
+2025-01-14 09:46:34,476 INFO /usr/local/bin/bench use mysite
+2025-01-14 09:47:48,480 INFO /usr/local/bin/bench get-app crm
+2025-01-14 09:47:49,039 LOG Getting crm
+2025-01-14 09:47:49,040 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git  --depth 1 --origin upstream
+2025-01-14 09:47:52,456 LOG Installing crm
+2025-01-14 09:47:52,456 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-14 09:47:54,611 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-14 09:48:02,643 DEBUG bench build --app crm
+2025-01-14 09:48:02,845 INFO /usr/local/bin/bench build --app crm
+2025-01-14 09:48:40,528 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-14 09:48:40,718 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-14 09:48:40,718 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-14 09:50:03,504 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-14 09:58:24,250 INFO /usr/local/bin/bench --site mysite uninstall-app crm
+2025-01-14 09:58:59,781 INFO /usr/local/bin/bench --site mysite clear-cache
+2025-01-14 09:59:34,297 INFO /usr/local/bin/bench --site mysite clear-website-cache
+2025-01-14 10:00:11,434 INFO /usr/local/bin/bench --site mysite build
+2025-01-14 10:01:47,811 INFO /usr/local/bin/bench mariadb
+2025-01-14 10:28:14,247 INFO /usr/local/bin/bench --site mysite reinstall
+2025-01-14 10:54:28,022 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-14 10:59:16,525 INFO /usr/local/bin/bench mariadb
+2025-01-14 11:01:14,583 INFO /usr/local/bin/bench migrate
+2025-01-14 11:06:13,693 INFO /usr/local/bin/bench --site mysite reload-doc fcrm doctype fcrm_settings
+2025-01-14 11:06:50,072 INFO /usr/local/bin/bench --site mysite reload-doc fcrm doctype fcrm_settings
+2025-01-14 11:11:28,478 INFO /usr/local/bin/bench --site mysite uninstall-app crm --no-backup
+2025-01-14 11:15:56,509 INFO /usr/local/bin/bench uninstall-app crm
+2025-01-14 11:16:43,180 INFO /usr/local/bin/bench use mysite
+2025-01-14 11:20:36,629 INFO /usr/local/bin/bench unsintall-app crm
+2025-01-14 11:20:48,874 INFO /usr/local/bin/bench uninstall-app crm
+2025-01-14 11:25:08,021 INFO /usr/local/bin/bench --site mysite uninstall-app crm --force
+2025-01-14 11:26:03,988 INFO /usr/local/bin/bench remove-from-installed-apps crm
+2025-01-14 11:26:20,631 INFO /usr/local/bin/bench remove-app crm --force
+2025-01-14 11:26:20,644 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip uninstall -y crm
+2025-01-14 11:26:21,017 INFO App moved from apps/crm to archived/apps/crm-2025-01-14_1
+2025-01-14 11:26:21,149 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-14 11:26:21,263 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-14 11:26:21,263 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-14 11:26:53,330 INFO /usr/local/bin/bench clear-cache
+2025-01-14 11:27:03,006 INFO /usr/local/bin/bench clear-website-cache
+2025-01-14 11:29:42,977 INFO /usr/local/bin/bench migrate
+2025-01-14 11:30:19,903 INFO /usr/local/bin/bench build
+2025-01-14 11:30:55,436 INFO /usr/local/bin/bench get-app crm
+2025-01-14 11:30:55,959 LOG Getting crm
+2025-01-14 11:30:55,959 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git  --depth 1 --origin upstream
+2025-01-14 11:30:59,666 LOG Installing crm
+2025-01-14 11:30:59,667 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-14 11:31:01,233 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-14 11:31:07,489 DEBUG bench build --app crm
+2025-01-14 11:31:07,583 INFO /usr/local/bin/bench build --app crm
+2025-01-14 11:31:30,945 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-14 11:31:31,059 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-14 11:31:31,059 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-14 11:32:08,511 INFO /usr/local/bin/bench --site mysite --intall-app crm
+2025-01-14 11:32:18,642 INFO /usr/local/bin/bench --site mysite --install-app crm
+2025-01-14 11:32:53,317 INFO /usr/local/bin/bench new-site mysite --install-app crm
+2025-01-14 11:33:10,080 INFO /usr/local/bin/bench --site mysite --install-app crm
+2025-01-14 11:33:21,029 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-14 11:34:13,103 INFO /usr/local/bin/bench install-app crm
+2025-01-14 11:41:50,434 INFO /usr/local/bin/bench --site mysite console
+2025-01-14 11:58:20,824 INFO /usr/local/bin/bench --site mysite clear-cache
+2025-01-14 11:58:33,711 INFO /usr/local/bin/bench --site mysite migrate
+2025-01-14 11:59:45,674 INFO /usr/local/bin/bench build
+2025-01-14 12:00:01,973 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-14 12:01:27,818 INFO /usr/local/bin/bench start
+2025-01-14 12:01:28,003 INFO /usr/local/bin/bench watch
+2025-01-14 12:01:28,018 INFO /usr/local/bin/bench serve --port 8000
+2025-01-14 12:01:28,029 INFO /usr/local/bin/bench schedule
+2025-01-14 12:01:28,030 INFO /usr/local/bin/bench worker
+2025-01-14 12:03:43,818 INFO /usr/local/bin/bench start
+2025-01-14 12:03:43,983 INFO /usr/local/bin/bench schedule
+2025-01-14 12:03:43,983 INFO /usr/local/bin/bench worker
+2025-01-14 12:03:44,012 INFO /usr/local/bin/bench watch
+2025-01-14 12:03:44,012 INFO /usr/local/bin/bench serve --port 8000
+2025-01-14 12:07:06,224 INFO /usr/local/bin/bench get-app crm
+2025-01-14 12:07:11,344 INFO App moved from apps/crm to archived/apps/crm-2025-01-14_2
+2025-01-14 12:07:11,349 LOG Getting crm
+2025-01-14 12:07:11,349 DEBUG cd ./apps && git clone https://github.com/frappe/crm.git --branch develop --depth 1 --origin upstream
+2025-01-14 12:07:14,923 LOG Installing crm
+2025-01-14 12:07:14,924 DEBUG cd /home/test/night-bench && /home/test/night-bench/env/bin/python -m pip install --quiet --upgrade -e /home/test/night-bench/apps/crm 
+2025-01-14 12:07:17,036 DEBUG cd /home/test/night-bench/apps/crm && yarn install --check-files
+2025-01-14 12:07:22,698 DEBUG bench build --app crm
+2025-01-14 12:07:22,808 INFO /usr/local/bin/bench build --app crm
+2025-01-14 12:07:45,757 DEBUG cd /home/test/night-bench && supervisorctl restart frappe:
+2025-01-14 12:07:45,866 WARNING cd /home/test/night-bench && supervisorctl restart frappe: executed with exit code 7
+2025-01-14 12:07:45,867 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-01-14 12:10:50,125 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-14 12:11:07,167 INFO /usr/local/bin/bench install-app crm
+2025-01-14 12:12:17,375 INFO /usr/local/bin/bench start
+2025-01-14 12:12:17,545 INFO /usr/local/bin/bench watch
+2025-01-14 12:12:17,549 INFO /usr/local/bin/bench worker
+2025-01-14 12:12:17,576 INFO /usr/local/bin/bench schedule
+2025-01-14 12:12:17,576 INFO /usr/local/bin/bench serve --port 8000
+2025-01-14 12:31:02,045 INFO /usr/local/bin/bench migrate
+2025-01-14 12:32:35,943 INFO /usr/local/bin/bench clear-cache
+2025-01-14 12:33:02,888 INFO /usr/local/bin/bench clear-website-cache
+2025-01-14 12:34:03,815 INFO /usr/local/bin/bench --site mysite install-app crm
+2025-01-14 12:34:11,982 INFO /usr/local/bin/bench update
+2025-01-14 12:34:13,370 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-01-14 12:34:24,534 WARNING /usr/local/bin/bench update executed with exit code 1
+2025-01-14 12:35:51,002 INFO /usr/local/bin/bench reinstall-app crm
+2025-01-14 12:36:10,519 INFO /usr/local/bin/bench reinstall-apps
+2025-01-14 12:36:13,231 INFO /usr/local/bin/bench reinstall-app
+2025-01-14 12:36:28,024 INFO /usr/local/bin/bench --site mysite reinstall-app
+2025-01-14 12:38:20,393 INFO /usr/local/bin/bench --site mysite reinstall
+2025-01-14 12:40:29,678 INFO /usr/local/bin/bench migrate
+2025-01-14 12:42:29,491 INFO /usr/local/bin/bench clear-cache
+2025-01-14 12:42:52,949 INFO /usr/local/bin/bench start
+2025-01-14 12:42:53,125 INFO /usr/local/bin/bench watch
+2025-01-14 12:42:53,148 INFO /usr/local/bin/bench serve --port 8000
+2025-01-14 12:42:53,149 INFO /usr/local/bin/bench worker
+2025-01-14 12:42:53,149 INFO /usr/local/bin/bench schedule
+2025-01-14 17:05:27,587 INFO /usr/local/bin/bench set-config developer_mode true
+2025-01-14 17:07:22,416 INFO /usr/local/bin/bench set-config -g developer_mode true
+2025-01-14 17:07:35,507 INFO /usr/local/bin/bench start
+2025-01-14 17:07:35,687 INFO /usr/local/bin/bench schedule
+2025-01-14 17:07:35,696 INFO /usr/local/bin/bench serve --port 8000
+2025-01-14 17:07:35,715 INFO /usr/local/bin/bench worker
+2025-01-14 17:07:35,718 INFO /usr/local/bin/bench watch
+2025-01-14 18:00:01,301 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-15 09:31:34,429 INFO /usr/local/bin/bench start
+2025-01-15 09:31:34,712 INFO /usr/local/bin/bench serve --port 8000
+2025-01-15 09:31:34,744 INFO /usr/local/bin/bench worker
+2025-01-15 09:31:34,745 INFO /usr/local/bin/bench watch
+2025-01-15 09:31:34,747 INFO /usr/local/bin/bench schedule
