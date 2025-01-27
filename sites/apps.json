@@ -18,7 +18,7 @@
         "idx": 2,
         "version": "15.47.4"
     },
-    "myapp": {
+    "kpg_crm": {
         "is_repo": true,
         "resolution": {
             "commit_hash": "75576f12b9f64b746086eab96b5d43bf50af2c02",

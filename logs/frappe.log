@@ -1,322 +1,463 @@
-2025-01-13 11:23:30,930 ERROR frappe New Exception collected in error log
+2025-01-16 16:58:28,146 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:23:30,953 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"name":"SAL-QTN-2025-00003","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":0,"title":"Maya Enterprise","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Lead","party_name":"1diqbinlrl","customer_name":"Maya Enterprise","transaction_date":"2025-01-16","valid_till":"2025-02-16","order_type":"Sales","company":"Babu Textiles","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":67,"total_net_weight":0,"base_total":1126,"base_net_total":1126,"total":1126,"net_total":1126,"tax_category":"GST","taxes_and_charges":"GSt - BBTex","base_total_taxes_and_charges":202.68,"total_taxes_and_charges":202.68,"base_grand_total":1328.68,"base_rounding_adjustment":0.32,"base_rounded_total":1329,"base_in_words":"","grand_total":1328.68,"rounding_adjustment":0.32,"rounded_total":1329,"disable_rounded_total":0,"in_words":"","apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">CGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">SGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT0003:Book</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 846.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT001</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 280.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","contact_display":"","contact_mobile":"5656565645","contact_email":"maya@gmail.com","tc_name":"No returning of damaged products","terms":"<div class=\\"ql-editor read-mode\\"><p>The products sold cannot be returned if damaged</p></div>","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","payment_schedule":[{"name":"qhtt54n1hf","owner":"Administrator","creation":"2025-01-16 16:53:59.620428","modified":"2025-01-16 16:53:59.620428","modified_by":"Administrator","docstatus":0,"idx":1,"due_date":"2025-01-16","invoice_portion":100,"discount":0,"payment_amount":1329,"outstanding":1329,"paid_amount":0,"discounted_amount":0,"base_payment_amount":1329,"parent":"SAL-QTN-2025-00003","parentfield":"payment_schedule","parenttype":"Quotation","doctype":"Payment Schedule"}],"packed_items":[],"pricing_rules":[],"lost_reasons":[],"competitors":[],"items":[{"name":"ejgg5tjc56","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"item_code":"IT0003:Book","item_name":"IT0003:Book","description":"IT0003:Book","item_group":"Products","image":"","qty":47,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":47,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":18,"net_rate":18,"amount":846,"net_amount":846,"base_rate":18,"base_net_rate":18,"base_amount":846,"base_net_amount":846,"pricing_rules":"","stock_uom_rate":18,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":846,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - BBTex","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"},{"name":"pfjf7m0uoe","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"item_code":"IT001","item_name":"IT001","description":"IT001","item_group":"Products","image":"","qty":20,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":20,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":14,"net_rate":14,"amount":280,"net_amount":280,"base_rate":14,"base_net_rate":14,"base_amount":280,"base_net_amount":280,"pricing_rules":"","stock_uom_rate":14,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":280,"weight_per_unit":0,"total_weight":0,"against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"}],"taxes":[{"name":"q48a3c7ovk","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"charge_type":"On Net Total","account_head":"2020202020 - CGST - BBTex","description":"CGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1227.34,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1227.34,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"},{"name":"i64i4m20ej","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"charge_type":"On Net Total","account_head":"212121212121 - SGST - BBTex","description":"SGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1328.68,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1328.68,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"}],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2025-01-16T11:28:20.708Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-16 16:59:13,181 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:28:38,673 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"name":"SAL-QTN-2025-00003","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":0,"title":"Maya Enterprise","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Lead","party_name":"1diqbinlrl","customer_name":"Maya Enterprise","transaction_date":"2025-01-16","valid_till":"2025-02-16","order_type":"Sales","company":"Babu Textiles","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":67,"total_net_weight":0,"base_total":1126,"base_net_total":1126,"total":1126,"net_total":1126,"tax_category":"GST","taxes_and_charges":"GSt - BBTex","base_total_taxes_and_charges":202.68,"total_taxes_and_charges":202.68,"base_grand_total":1328.68,"base_rounding_adjustment":0.32,"base_rounded_total":1329,"base_in_words":"","grand_total":1328.68,"rounding_adjustment":0.32,"rounded_total":1329,"disable_rounded_total":0,"in_words":"","apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">CGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">SGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT0003:Book</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 846.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT001</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 280.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","contact_display":"","contact_mobile":"5656565645","contact_email":"maya@gmail.com","tc_name":"No returning of damaged products","terms":"<div class=\\"ql-editor read-mode\\"><p>The products sold cannot be returned if damaged</p></div>","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","payment_schedule":[{"name":"qhtt54n1hf","owner":"Administrator","creation":"2025-01-16 16:53:59.620428","modified":"2025-01-16 16:53:59.620428","modified_by":"Administrator","docstatus":0,"idx":1,"due_date":"2025-01-16","invoice_portion":100,"discount":0,"payment_amount":1329,"outstanding":1329,"paid_amount":0,"discounted_amount":0,"base_payment_amount":1329,"parent":"SAL-QTN-2025-00003","parentfield":"payment_schedule","parenttype":"Quotation","doctype":"Payment Schedule"}],"packed_items":[],"pricing_rules":[],"lost_reasons":[],"competitors":[],"items":[{"name":"ejgg5tjc56","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"item_code":"IT0003:Book","item_name":"IT0003:Book","description":"IT0003:Book","item_group":"Products","image":"","qty":47,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":47,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":18,"net_rate":18,"amount":846,"net_amount":846,"base_rate":18,"base_net_rate":18,"base_amount":846,"base_net_amount":846,"pricing_rules":"","stock_uom_rate":18,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":846,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - BBTex","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"},{"name":"pfjf7m0uoe","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"item_code":"IT001","item_name":"IT001","description":"IT001","item_group":"Products","image":"","qty":20,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":20,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":14,"net_rate":14,"amount":280,"net_amount":280,"base_rate":14,"base_net_rate":14,"base_amount":280,"base_net_amount":280,"pricing_rules":"","stock_uom_rate":14,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":280,"weight_per_unit":0,"total_weight":0,"against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"}],"taxes":[{"name":"q48a3c7ovk","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"charge_type":"On Net Total","account_head":"2020202020 - CGST - BBTex","description":"CGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1227.34,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1227.34,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"},{"name":"i64i4m20ej","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"charge_type":"On Net Total","account_head":"212121212121 - SGST - BBTex","description":"SGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1328.68,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1328.68,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"}],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2025-01-16T11:28:20.708Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-16 17:02:45,226 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'cmd': 'crm.api.notifications.get_notifications'}
-2025-01-13 11:28:38,701 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"name":"SAL-QTN-2025-00003","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":0,"title":"Maya Enterprise","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Lead","party_name":"1diqbinlrl","customer_name":"Maya Enterprise","transaction_date":"2025-01-16","valid_till":"2025-02-16","order_type":"Sales","company":"Babu Textiles","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":67,"total_net_weight":0,"base_total":1126,"base_net_total":1126,"total":1126,"net_total":1126,"tax_category":"GST","taxes_and_charges":"GSt - BBTex","base_total_taxes_and_charges":202.68,"total_taxes_and_charges":202.68,"base_grand_total":1328.68,"base_rounding_adjustment":0.32,"base_rounded_total":1329,"base_in_words":"","grand_total":1328.68,"rounding_adjustment":0.32,"rounded_total":1329,"disable_rounded_total":0,"in_words":"","apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">CGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">SGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT0003:Book</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 846.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT001</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 280.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","contact_display":"","contact_mobile":"5656565645","contact_email":"maya@gmail.com","tc_name":"No returning of damaged products","terms":"<div class=\\"ql-editor read-mode\\"><p>The products sold cannot be returned if damaged</p></div>","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","payment_schedule":[{"name":"qhtt54n1hf","owner":"Administrator","creation":"2025-01-16 16:53:59.620428","modified":"2025-01-16 16:53:59.620428","modified_by":"Administrator","docstatus":0,"idx":1,"due_date":"2025-01-16","invoice_portion":100,"discount":0,"payment_amount":1329,"outstanding":1329,"paid_amount":0,"discounted_amount":0,"base_payment_amount":1329,"parent":"SAL-QTN-2025-00003","parentfield":"payment_schedule","parenttype":"Quotation","doctype":"Payment Schedule"}],"packed_items":[],"pricing_rules":[],"lost_reasons":[],"competitors":[],"items":[{"name":"ejgg5tjc56","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"item_code":"IT0003:Book","item_name":"IT0003:Book","description":"IT0003:Book","item_group":"Products","image":"","qty":47,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":47,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":18,"net_rate":18,"amount":846,"net_amount":846,"base_rate":18,"base_net_rate":18,"base_amount":846,"base_net_amount":846,"pricing_rules":"","stock_uom_rate":18,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":846,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - BBTex","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"},{"name":"pfjf7m0uoe","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"item_code":"IT001","item_name":"IT001","description":"IT001","item_group":"Products","image":"","qty":20,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":20,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":14,"net_rate":14,"amount":280,"net_amount":280,"base_rate":14,"base_net_rate":14,"base_amount":280,"base_net_amount":280,"pricing_rules":"","stock_uom_rate":14,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":280,"weight_per_unit":0,"total_weight":0,"against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"}],"taxes":[{"name":"q48a3c7ovk","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"charge_type":"On Net Total","account_head":"2020202020 - CGST - BBTex","description":"CGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1227.34,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1227.34,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"},{"name":"i64i4m20ej","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"charge_type":"On Net Total","account_head":"212121212121 - SGST - BBTex","description":"SGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1328.68,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1328.68,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"}],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2025-01-16T11:28:20.708Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-16 17:07:24,978 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'cmd': 'crm.api.session.get_lead_contacts'}
-2025-01-13 11:28:38,720 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"name":"SAL-QTN-2025-00003","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":0,"title":"Maya Enterprise","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Lead","party_name":"1diqbinlrl","customer_name":"Maya Enterprise","transaction_date":"2025-01-16","valid_till":"2025-02-16","order_type":"Sales","company":"Babu Textiles","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":67,"total_net_weight":0,"base_total":1126,"base_net_total":1126,"total":1126,"net_total":1126,"tax_category":"GST","taxes_and_charges":"GSt - BBTex","base_total_taxes_and_charges":202.68,"total_taxes_and_charges":202.68,"base_grand_total":1328.68,"base_rounding_adjustment":0.32,"base_rounded_total":1329,"base_in_words":"","grand_total":1328.68,"rounding_adjustment":0.32,"rounded_total":1329,"disable_rounded_total":0,"in_words":"","apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">CGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">SGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT0003:Book</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 846.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT001</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 280.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","contact_display":"","contact_mobile":"5656565645","contact_email":"maya@gmail.com","tc_name":"No returning of damaged products","terms":"<div class=\\"ql-editor read-mode\\"><p>The products sold cannot be returned if damaged</p></div>","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","payment_schedule":[{"name":"qhtt54n1hf","owner":"Administrator","creation":"2025-01-16 16:53:59.620428","modified":"2025-01-16 16:53:59.620428","modified_by":"Administrator","docstatus":0,"idx":1,"due_date":"2025-01-16","invoice_portion":100,"discount":0,"payment_amount":1329,"outstanding":1329,"paid_amount":0,"discounted_amount":0,"base_payment_amount":1329,"parent":"SAL-QTN-2025-00003","parentfield":"payment_schedule","parenttype":"Quotation","doctype":"Payment Schedule"}],"packed_items":[],"pricing_rules":[],"lost_reasons":[],"competitors":[],"items":[{"name":"ejgg5tjc56","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"item_code":"IT0003:Book","item_name":"IT0003:Book","description":"IT0003:Book","item_group":"Products","image":"","qty":47,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":47,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":18,"net_rate":18,"amount":846,"net_amount":846,"base_rate":18,"base_net_rate":18,"base_amount":846,"base_net_amount":846,"pricing_rules":"","stock_uom_rate":18,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":846,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - BBTex","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"},{"name":"pfjf7m0uoe","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"item_code":"IT001","item_name":"IT001","description":"IT001","item_group":"Products","image":"","qty":20,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":20,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":14,"net_rate":14,"amount":280,"net_amount":280,"base_rate":14,"base_net_rate":14,"base_amount":280,"base_net_amount":280,"pricing_rules":"","stock_uom_rate":14,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":280,"weight_per_unit":0,"total_weight":0,"against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"}],"taxes":[{"name":"q48a3c7ovk","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"charge_type":"On Net Total","account_head":"2020202020 - CGST - BBTex","description":"CGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1227.34,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1227.34,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"},{"name":"i64i4m20ej","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"charge_type":"On Net Total","account_head":"212121212121 - SGST - BBTex","description":"SGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1328.68,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1328.68,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"}],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2025-01-16T11:28:20.708Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-16 17:07:40,819 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': {}, 'cmd': 'crm.api.views.get_views'}
-2025-01-13 11:28:38,758 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"name":"SAL-QTN-2025-00003","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":0,"title":"Maya Enterprise","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Lead","party_name":"1diqbinlrl","customer_name":"Maya Enterprise","transaction_date":"2025-01-16","valid_till":"2025-02-16","order_type":"Sales","company":"Babu Textiles","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":67,"total_net_weight":0,"base_total":1126,"base_net_total":1126,"total":1126,"net_total":1126,"tax_category":"GST","taxes_and_charges":"GSt - BBTex","base_total_taxes_and_charges":202.68,"total_taxes_and_charges":202.68,"base_grand_total":1328.68,"base_rounding_adjustment":0.32,"base_rounded_total":1329,"base_in_words":"","grand_total":1328.68,"rounding_adjustment":0.32,"rounded_total":1329,"disable_rounded_total":0,"in_words":"","apply_discount_on":"Grand Total","base_discount_amount":0,"additional_discount_percentage":0,"discount_amount":0,"other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">CGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">SGST</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT0003:Book</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 846.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 76.14\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IT001</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 280.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 25.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","contact_display":"","contact_mobile":"5656565645","contact_email":"maya@gmail.com","tc_name":"No returning of damaged products","terms":"<div class=\\"ql-editor read-mode\\"><p>The products sold cannot be returned if damaged</p></div>","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","competitors":[],"packed_items":[],"pricing_rules":[],"items":[{"name":"ejgg5tjc56","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"item_code":"IT0003:Book","item_name":"IT0003:Book","description":"IT0003:Book","item_group":"Products","image":"","qty":47,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":47,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":18,"net_rate":18,"amount":846,"net_amount":846,"base_rate":18,"base_net_rate":18,"base_amount":846,"base_net_amount":846,"pricing_rules":"","stock_uom_rate":18,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":846,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - BBTex","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"},{"name":"pfjf7m0uoe","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"item_code":"IT001","item_name":"IT001","description":"IT001","item_group":"Products","image":"","qty":20,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":20,"actual_qty":0,"company_total_stock":0,"price_list_rate":0,"base_price_list_rate":0,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":14,"net_rate":14,"amount":280,"net_amount":280,"base_rate":14,"base_net_rate":14,"base_amount":280,"base_net_amount":280,"pricing_rules":"","stock_uom_rate":14,"is_free_item":0,"is_alternative":0,"has_alternative_item":0,"valuation_rate":0,"gross_profit":280,"weight_per_unit":0,"total_weight":0,"against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"item_tax_rate":"{}","page_break":0,"parent":"SAL-QTN-2025-00003","parentfield":"items","parenttype":"Quotation","doctype":"Quotation Item"}],"taxes":[{"name":"q48a3c7ovk","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":1,"charge_type":"On Net Total","account_head":"2020202020 - CGST - BBTex","description":"CGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1227.34,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1227.34,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"},{"name":"i64i4m20ej","owner":"Administrator","creation":"2025-01-16 16:53:59.436021","modified":"2025-01-16 16:53:59.436021","modified_by":"Administrator","docstatus":0,"idx":2,"charge_type":"On Net Total","account_head":"212121212121 - SGST - BBTex","description":"SGST","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - BBTex","rate":9,"account_currency":"INR","tax_amount":101.34,"total":1328.68,"tax_amount_after_discount_amount":101.34,"base_tax_amount":101.34,"base_total":1328.68,"base_tax_amount_after_discount_amount":101.34,"item_wise_tax_detail":"{\\"IT0003:Book\\":[9,76.14],\\"IT001\\":[9,25.2]}","dont_recompute_tax":0,"parent":"SAL-QTN-2025-00003","parentfield":"taxes","parenttype":"Quotation","doctype":"Sales Taxes and Charges"}],"lost_reasons":[],"payment_schedule":[{"name":"qhtt54n1hf","owner":"Administrator","creation":"2025-01-16 16:53:59.620428","modified":"2025-01-16 16:53:59.620428","modified_by":"Administrator","docstatus":0,"idx":1,"due_date":"2025-01-16","invoice_portion":100,"discount":0,"payment_amount":1329,"outstanding":1329,"paid_amount":0,"discounted_amount":0,"base_payment_amount":1329,"parent":"SAL-QTN-2025-00003","parentfield":"payment_schedule","parenttype":"Quotation","doctype":"Payment Schedule"}],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2025-01-16T11:37:33.905Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-17 11:10:48,994 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:28:38,981 ERROR frappe New Exception collected in error log
+Form Dict: {'user': 'alexander@clustertex.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2025-01-20 09:55:46,790 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'cmd': 'crm.api.doc.get_filterable_fields'}
-2025-01-13 11:28:38,996 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-uixxnbinns","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"Warm","custom_lead_stage":"New","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","website":"www.camlin.com","territory":"Mumbai","industry":"Publishing","custom_new_source":"Other","custom_other":"Advertisement","custom_address_line_1":"central road","custom_address_line_2":"Andheri (east) ,Mumbai","custom_zipcode":400093,"lead_owner":"Administrator","custom_expected_sales":4000,"custom_expected_closing_date":"2025-01-25","salutation":"Ms","first_name":"Ellizabeth","last_name":"Collins","gender":"Female","email":"ellicollins@gmail.com","mobile_no":"9865324578","custom_whatsapp":"9865324578","custom_product_name":"black and white","custom_product_group":"Classic","custom_unit_of_measure":"Nos","custom_noof_items":"25"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:15:37,892 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:28:39,026 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-uixxnbinns","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"Warm","custom_lead_stage":"New","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","website":"www.camlin.com","territory":"Mumbai","industry":"Publishing","custom_new_source":"Other","custom_other":"Advertisement","custom_address_line_1":"central road","custom_address_line_2":"Andheri (east) ,Mumbai","custom_zipcode":400093,"lead_owner":"Administrator","custom_expected_sales":4000,"custom_expected_closing_date":"2025-01-25","salutation":"Ms","first_name":"Ellizabeth","last_name":"Collins","gender":"Female","email":"ellicollins@gmail.com","mobile_no":"9865324578","custom_whatsapp":"9865324578","custom_product_name":"black and white","custom_product_group":"Classic","custom_unit_of_measure":"Nos","custom_noof_items":"25"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:18:44,060 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:28:39,027 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-uixxnbinns","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"Warm","custom_lead_stage":"New","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","website":"www.camlin.com","territory":"Mumbai","industry":"Publishing","custom_new_source":"Other","custom_other":"Campaign","custom_address_line_1":"central road","custom_address_line_2":"Andheri (east) ,Mumbai","custom_zipcode":400093,"lead_owner":"Administrator","custom_expected_sales":4000,"custom_expected_closing_date":"2025-01-25","salutation":"Ms","first_name":"Ellizabeth","last_name":"Collins","gender":"Female","email":"ellicollins@gmail.com","mobile_no":"9865324578","custom_whatsapp":"9865324578","custom_product_name":"black and white","custom_product_group":"Classic","custom_unit_of_measure":"Nos","custom_noof_items":"25"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:19:22,970 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:28:44,740 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-uixxnbinns","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"Warm","custom_lead_stage":"New","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","website":"www.camlin.com","territory":"Mumbai","industry":"Publishing","custom_new_source":"Other","custom_other":"Walk In","custom_address_line_1":"central road","custom_address_line_2":"Andheri (east) ,Mumbai","custom_zipcode":400093,"lead_owner":"Administrator","custom_expected_sales":4000,"custom_expected_closing_date":"2025-01-25","salutation":"Ms","first_name":"Ellizabeth","last_name":"Collins","gender":"Female","email":"ellicollins@gmail.com","mobile_no":"9865324578","custom_whatsapp":"9865324578","custom_product_name":"black and white","custom_product_group":"Classic","custom_unit_of_measure":"Nos","custom_noof_items":"25","custom_place":"kozhikode"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:25:18,529 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:28:44,831 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-hxogatvirg","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"Warm","custom_lead_stage":"New","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","territory":"Mumbai","industry":"Publishing","custom_new_source":"Other","custom_other":"Advertisement","custom_address_line_1":"central Road","custom_address_line_2":"Andheri (East) , Mumbai","lead_owner":"Administrator","custom_expected_sales":4000,"custom_expected_closing_date":"2025-01-25","custom_zipcode":400093,"first_name":"Ellizabeth ","last_name":"Collins","gender":"Female","mobile_no":"986522536","custom_whatsapp":"986522536"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:26:17,262 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'cmd': 'crm.api.session.get_organizations'}
-2025-01-13 11:28:45,254 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-hxogatvirg","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"Warm","custom_lead_stage":"New","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","territory":"Mumbai","industry":"Publishing","custom_new_source":"Other","custom_other":"Advertisement","custom_address_line_1":"central Road","custom_address_line_2":"Andheri (East) , Mumbai","lead_owner":"Administrator","custom_expected_sales":4000,"custom_expected_closing_date":"2025-01-25","custom_zipcode":400093,"first_name":"Ellizabeth ","last_name":"Collins","gender":"Female","mobile_no":"986522536","custom_whatsapp":"986522536"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:49:32,371 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'Contact', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:28:46,232 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-baaiiffyuf","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"custom_new_source":"Other","custom_other":"Advertisement","organization":"kukoyo camlin","territory":"Mumbai","first_name":"Ellizabeth","last_name":"Collins"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:51:35,420 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:28:46,345 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-cugaednbpi","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"custom_new_source":"Customer Reference","custom_select_reference_customer":"HR-EMP-00001","first_name":"sonali"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 10:56:11,083 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:00,778 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-cugaednbpi","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"custom_new_source":"Customer Reference","custom_select_reference_customer":"HR-EMP-00001","first_name":"sonali"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 11:25:27,645 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:29:00,805 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-zmokyilmvh","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"kukoyo camlin","territory":"Mumbai","custom_new_source":"Other","custom_other":"Advertisement","first_name":"Elizabeth ","last_name":"Collins"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 11:34:50,824 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Task', 'cmd': 'crm.api.doc.get_filterable_fields'}
-2025-01-13 11:29:00,851 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-bjirumaxrc","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"camlin kukoyo","custom_new_source":"Other","custom_other":"Advertisement","first_name":"Ellizabeth"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 11:38:45,533 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Task', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:02,278 ERROR frappe New Exception collected in error log
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-fmnoqdwwrw","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"camlin","first_name":"Ellizabeth"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-20 11:39:11,141 ERROR frappe New Exception collected in error log
 Site: mysite
-Form Dict: {'doctype': 'CRM Call Log', 'cmd': 'crm.api.doc.get_filterable_fields'}
-2025-01-13 11:29:02,278 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:29:02,309 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Call Log', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:06,605 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:29:06,738 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'Email Template', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:09,321 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:29:09,415 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Task', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:11,517 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:29:11,556 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Organization', 'cmd': 'crm.api.doc.get_filterable_fields'}
-2025-01-13 11:29:11,589 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Organization', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:28,924 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Organization', 'filters': {'name': ['LIKE', '%ffg%']}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:28,951 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'view': {'name': '', 'label': 'List', 'type': 'list', 'icon': '', 'filters': {'name': ['LIKE', '%ffg%']}, 'order_by': 'modified desc', 'group_by_field': 'owner', 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'route_name': 'Organizations', 'load_default_columns': True, 'pinned': False, 'public': False, 'doctype': 'CRM Organization'}, 'cmd': 'crm.fcrm.doctype.crm_view_settings.crm_view_settings.create_or_update_default_view'}
-2025-01-13 11:29:30,278 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'view': {'name': '', 'label': 'List', 'type': 'list', 'icon': '', 'filters': {}, 'order_by': 'modified desc', 'group_by_field': 'owner', 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'route_name': 'Organizations', 'load_default_columns': True, 'pinned': False, 'public': False, 'doctype': 'CRM Organization'}, 'cmd': 'crm.fcrm.doctype.crm_view_settings.crm_view_settings.create_or_update_default_view'}
-2025-01-13 11:29:30,282 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Organization', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:29:50,469 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:29:50,610 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:30:02,653 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:30:02,737 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Organization', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:30:08,214 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:30:08,381 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:30:30,664 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:30:30,732 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Organization', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {}, 'view': {'custom_view_name': '', 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '', 'kanban_fields': '', 'columns': '', 'rows': '', 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:30:40,856 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:30:41,000 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:31:27,966 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'cmd': 'crm.api.notifications.get_notifications'}
-2025-01-13 11:31:27,981 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': {}, 'cmd': 'crm.api.views.get_views'}
-2025-01-13 11:31:28,014 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:31:28,031 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'cmd': 'crm.api.session.get_lead_contacts'}
-2025-01-13 11:31:28,288 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'cmd': 'crm.api.doc.get_filterable_fields'}
-2025-01-13 11:31:28,292 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'FCRM Settings', 'name': 'FCRM Settings', 'cmd': 'frappe.client.get'}
-2025-01-13 11:31:28,313 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'page_length': 20, 'page_length_count': 20, 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:31:28,314 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'doctype': 'CRM Lead', 'filters': {}, 'order_by': 'modified desc', 'default_filters': {'converted': 0}, 'view': {'custom_view_name': 1, 'view_type': 'list', 'group_by_field': 'owner'}, 'column_field': 'status', 'title_field': '', 'kanban_columns': '[]', 'kanban_fields': '[]', 'columns': '[{"label": "Name", "type": "Data", "key": "lead_name", "width": "12rem"}, {"label": "Organization", "type": "Link", "key": "organization", "options": "CRM Organization", "width": "10rem"}, {"label": "Status", "type": "Select", "key": "status", "width": "8rem"}, {"label": "Email", "type": "Data", "key": "email", "width": "12rem"}, {"label": "Mobile No", "type": "Data", "key": "mobile_no", "width": "11rem"}, {"label": "Assigned To", "type": "Text", "key": "_assign", "width": "10rem"}, {"label": "Last Modified", "type": "Datetime", "key": "modified", "width": "8rem"}]', 'rows': '["name", "lead_name", "organization", "status", "email", "mobile_no", "lead_owner", "first_name", "sla_status", "response_by", "first_response_time", "first_responded_on", "modified", "_assign", "image", "owner", "creation", "modified_by", "_liked_by"]', 'cmd': 'crm.api.doc.get_data'}
-2025-01-13 11:33:49,273 ERROR frappe Error while inserting deferred Error Log record: Error Log ptdc5q7qg4: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+Form Dict: {'doc': '{"docstatus":0,"doctype":"CRM Lead","name":"new-crm-lead-fmnoqdwwrw","__islocal":1,"__unsaved":1,"owner":"Administrator","naming_series":"CRM-LEAD-.YYYY.-","custom_company":"Afsal and Co","status":"New","custom_lead_stage":"","no_of_employees":"1-10","converted":0,"sla_status":"","communication_status":"Open","status_change_log":[],"organization":"camlin","first_name":"Ellizabeth","mobile_no":"9865322536"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-22 17:37:03,879 ERROR frappe Error while inserting deferred Route History record: Could not find User: alexander@clustertex.com
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,277 ERROR frappe Error while inserting deferred Error Log record: Error Log tjd07p9kme: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-24 10:18:25,207 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/adani group'}
+2025-01-24 10:18:25,231 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Innoviva'}
+2025-01-24 10:18:25,243 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/balad industries'}
+2025-01-24 10:18:25,266 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Viewmed Health care'}
+2025-01-24 10:18:25,274 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': "leads/desto's dine"}
+2025-01-24 10:18:25,356 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Innovata'}
+2025-01-24 10:18:26,771 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Asian Paints'}
+2025-01-24 10:18:26,931 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/baiju transports'}
+2025-01-24 10:18:27,084 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/gigatech Technologies'}
+2025-01-24 10:18:27,140 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Bajaj Auto'}
+2025-01-24 10:18:27,142 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Redmi'}
+2025-01-24 10:18:27,385 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/baju auto'}
+2025-01-24 10:18:28,349 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Ashok Leyland'}
+2025-01-24 10:18:28,672 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/bbbaj transportation'}
+2025-01-24 10:18:28,806 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/asianaso paints'}
+2025-01-24 10:18:28,928 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'home'}
+2025-01-24 10:18:28,985 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/camlin kukoya'}
+2025-01-24 10:18:29,007 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Samsunng'}
+2025-01-24 10:18:29,635 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/universal Plastics'}
+2025-01-24 10:18:29,725 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/Xiomi'}
+2025-01-24 10:19:08,682 ERROR frappe New Exception collected in error log
+Site: mysite
+Form Dict: {'app_path': 'leads/view'}
+2025-01-24 10:19:26,811 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,315 ERROR frappe Error while inserting deferred Error Log record: Error Log icqgkbbhsv: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-24 10:19:30,151 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,324 ERROR frappe Error while inserting deferred Error Log record: Error Log sd89bhcrah: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-24 11:48:40,094 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,340 ERROR frappe Error while inserting deferred Error Log record: Error Log rvs9bag515: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-24 12:18:52,261 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,357 ERROR frappe Error while inserting deferred Error Log record: Error Log enqd6g9jho: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-24 15:06:28,298 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,368 ERROR frappe Error while inserting deferred Error Log record: Error Log p8c83uikve: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-24 15:20:43,061 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,384 ERROR frappe Error while inserting deferred Error Log record: Error Log deuu5bkjch: 'Title' (Module import failed for CRM Call Log, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_call_log') will get truncated, as max characters allowed is 140
+2025-01-24 15:20:44,014 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,389 ERROR frappe Error while inserting deferred Error Log record: Error Log 1636qq91dr: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-26 14:15:00,830 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,393 ERROR frappe Error while inserting deferred Error Log record: Error Log fb1pv27oh2: 'Title' (Module import failed for CRM Call Log, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_call_log') will get truncated, as max characters allowed is 140
+2025-01-26 14:18:14,984 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,397 ERROR frappe Error while inserting deferred Error Log record: Error Log 8g6t47rchk: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-26 14:18:19,058 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,409 ERROR frappe Error while inserting deferred Error Log record: Error Log 9i583mnr19: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-26 14:18:24,291 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,419 ERROR frappe Error while inserting deferred Error Log record: Error Log tan07mittq: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
+2025-01-26 14:18:56,440 ERROR frappe New Exception collected in error log
 Site: mysite
 Form Dict: {}
-2025-01-13 11:33:49,423 ERROR frappe Error while inserting deferred Error Log record: Error Log 9uva7eme9d: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
+2025-01-26 15:10:35,634 ERROR frappe Could not take error snapshot: No module named 'kpg_crm'
+Site: frappe-site
 Form Dict: {}
-2025-01-13 11:33:49,427 ERROR frappe Error while inserting deferred Error Log record: Error Log 6ci3jc96a8: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 258, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1650, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1498, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1463, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1493, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1291, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1599, in get_hooks
+    hooks = _dict(_load_app_hooks())
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/utils/caching.py", line 47, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1568, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+2025-01-26 15:10:38,598 ERROR frappe Could not take error snapshot: No module named 'kpg_crm'
+Site: frappe-site
 Form Dict: {}
-2025-01-13 11:33:49,431 ERROR frappe Error while inserting deferred Error Log record: Error Log 2mon97vl1r: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 258, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1650, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1498, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1463, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1493, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1291, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1599, in get_hooks
+    hooks = _dict(_load_app_hooks())
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/utils/caching.py", line 47, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1568, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+2025-01-26 15:10:41,699 ERROR frappe Could not take error snapshot: No module named 'kpg_crm'
+Site: frappe-site
 Form Dict: {}
-2025-01-13 11:33:49,435 ERROR frappe Error while inserting deferred Error Log record: Error Log v1a0lb4ito: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 258, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1650, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1498, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1463, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1493, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1291, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1599, in get_hooks
+    hooks = _dict(_load_app_hooks())
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/utils/caching.py", line 47, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1568, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+2025-01-26 15:11:00,482 ERROR frappe Could not take error snapshot: No module named 'kpg_crm'
+Site: frappe-site
 Form Dict: {}
-2025-01-13 11:33:49,438 ERROR frappe Error while inserting deferred Error Log record: Error Log i2elfie451: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,442 ERROR frappe Error while inserting deferred Error Log record: Error Log 58l77jvtul: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,446 ERROR frappe Error while inserting deferred Error Log record: Error Log ga9rh6def6: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,455 ERROR frappe Error while inserting deferred Error Log record: Error Log invvk5c7d2: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,459 ERROR frappe Error while inserting deferred Error Log record: Error Log 2n31aum37i: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,463 ERROR frappe Error while inserting deferred Error Log record: Error Log n9t6lodrua: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,472 ERROR frappe Error while inserting deferred Error Log record: Error Log n8o1ju2f5a: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,475 ERROR frappe Error while inserting deferred Error Log record: Error Log dldbckuctn: 'Title' (Module import failed for CRM Organization, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.crm_organization') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,478 ERROR frappe Error while inserting deferred Error Log record: Error Log sicfvsg2lb: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,497 ERROR frappe Error while inserting deferred Error Log record: Error Log 52c8utgt4k: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 11:33:49,512 ERROR frappe Error while inserting deferred Error Log record: Error Log r6otco3v9c: 'Title' (Module import failed for FCRM Settings, the DocType you're trying to open might be deleted.
-Error: No module named 'frappe.core.doctype.fcrm_settings') will get truncated, as max characters allowed is 140
-Site: mysite
-Form Dict: {}
-2025-01-13 12:13:35,672 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'recipients': 'drfirst@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr First (#CRM-LEAD-2025-00011)', 'content': '<p>Hi this is a email message for you to remember our offer</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00011', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}
-2025-01-13 12:14:11,712 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'recipients': 'drfirst@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr First (#CRM-LEAD-2025-00011)', 'content': '<p>Hi this is a email message for you to remember our offer</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00011', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}
-2025-01-13 13:14:40,844 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-13 13:14:41,018 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-13 13:14:45,231 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-13 13:14:45,428 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-13 13:18:53,488 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-13 13:18:53,664 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:01:51,753 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:01:52,021 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:02:06,451 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:02:06,670 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:02:08,035 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:02:08,231 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:40:53,694 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:40:53,943 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:40:58,135 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 12:40:58,373 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {}
-2025-01-14 13:28:03,892 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'recipients': 'bablu@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr bablu balad (#CRM-LEAD-2025-00002)', 'content': '<p>This message for Mr . Bablu is to confirm your quotation</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00002', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}
-2025-01-14 13:28:35,884 ERROR frappe New Exception collected in error log
-Site: mysite
-Form Dict: {'recipients': 'bablu@gmail.com', 'attachments': [], 'cc': '', 'bcc': '', 'subject': 'Dr bablu balad (#CRM-LEAD-2025-00002)', 'content': '<p>This message for Mr . Bablu is to confirm your quotation</p>', 'doctype': 'CRM Lead', 'name': 'CRM-LEAD-2025-00002', 'send_email': 1, 'sender': 'admin@example.com', 'sender_full_name': 'Administrator', 'cmd': 'frappe.core.doctype.communication.email.make'}
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 99, in application
+    init_request(request)
+  File "/home/test/night-bench/apps/frappe/frappe/app.py", line 172, in init_request
+    frappe.init(site=site, sites_path=_sites_path, force=True)
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 258, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1650, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1498, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1463, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1493, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 86, in log_error_snapshot
+    log_error(title=str(exception), defer_insert=True)
+  File "/home/test/night-bench/apps/frappe/frappe/utils/error.py", line 61, in log_error
+    error_log = frappe.get_doc(
+                ^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1291, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/document.py", line 83, in get_doc
+    controller = get_controller(doctype)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 67, in get_controller
+    return import_controller(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/model/base_document.py", line 89, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1599, in get_hooks
+    hooks = _dict(_load_app_hooks())
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/utils/caching.py", line 47, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1568, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/test/night-bench/apps/frappe/frappe/__init__.py", line 1434, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'kpg_crm'
