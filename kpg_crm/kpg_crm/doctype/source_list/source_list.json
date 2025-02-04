@@ -1,24 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:lead_source",
  "creation": "2025-01-26 17:01:09.413296",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_vga1"
+  "lead_source"
  ],
  "fields": [
   {
-   "fieldname": "section_break_vga1",
-   "fieldtype": "Section Break"
+   "fieldname": "lead_source",
+   "fieldtype": "Data",
+   "label": "Lead source",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-26 17:01:09.413296",
+ "modified": "2025-02-01 13:10:01.796637",
  "modified_by": "Administrator",
  "module": "Kpg Crm",
  "name": "Source List",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
