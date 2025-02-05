@@ -1,28 +1,32 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:lead_source",
- "creation": "2025-01-26 17:01:09.413296",
+ "creation": "2025-02-01 13:40:20.442638",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "lead_source"
+  "subcategory_list",
+  "parent_source"
  ],
  "fields": [
   {
-   "fieldname": "lead_source",
+   "fieldname": "subcategory_list",
    "fieldtype": "Data",
-   "label": "Lead source",
-   "unique": 1
+   "label": "Subcategory list"
+  },
+  {
+   "fieldname": "parent_source",
+   "fieldtype": "Link",
+   "label": "Parent Source",
+   "options": "Source List"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-01 12:58:19.098216",
+ "modified": "2025-02-04 12:28:23.248796",
  "modified_by": "Administrator",
  "module": "Kpg Crm",
- "name": "Source List",
- "naming_rule": "By fieldname",
+ "name": "Sub category",
  "owner": "Administrator",
  "permissions": [
   {
